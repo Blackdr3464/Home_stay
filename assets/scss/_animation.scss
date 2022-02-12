@@ -1,0 +1,17 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomImg {
+  from {
+    zoom: 1;
+  }
+  to {
+    zoom: 1.1;
+  }
+}

@@ -1,0 +1,10 @@
+.referance {
+  padding: 20px 0;
+  margin: 52px auto 0;
+  border-top: 1px solid rgb(214, 214, 214);
+  & > p {
+    font-size: 1.3rem;
+    color: #999;
+    text-align: center;
+  }
+}

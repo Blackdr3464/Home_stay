@@ -1,0 +1,91 @@
+// slide
+ul.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  display: block;
+  width: 62px;
+
+  & > li {
+    margin: 0;
+
+    & > button {
+      font-size: 20px;
+    }
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  margin: 0 8px;
+}
+
+// button arrow
+
+button.slick-prev.pull-left.slick-arrow {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  background: $white-color;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+
+  &:hover:not(.slick-disabled) {
+    color: $hover-color;
+  }
+}
+
+button.slick-next.pull-right.slick-arrow {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  background: $white-color;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+
+  &:hover:not(.slick-disabled) {
+    color: $hover-color;
+  }
+}
+
+button.slick-prev.pull-left.slick-arrow.slick-disabled {
+  opacity: 0.7;
+}
+
+button.slick-next.pull-right.slick-arrow.slick-disabled {
+  opacity: 0.7;
+}
+
+// dots
+
+ul.slick-dots {
+  display: flex;
+}
+
+ul.slick-dots > li > button {
+  font-size: 0;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  // display: block;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul.slick-dots > li.slick-active button {
+  background-color: rgba(0, 0, 0, 0.55);
+}

@@ -1,0 +1,107 @@
+// mobile
+
+@media (max-width: 739px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header,
+  .wrapper {
+    padding: 0 8px;
+  }
+
+  .slide {
+    margin-top: 92px;
+  }
+
+  .content,
+  .content__place > h2,
+  .content__offer > h2,
+  .content__suggestions > h2,
+  .content__discover > h2,
+  .content__instruct > h2 {
+    margin-top: 30px;
+  }
+
+  button.slick-prev.pull-left.slick-arrow,
+  button.slick-next.pull-right.slick-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-between {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom-col1,
+  .footer-bottom-col2 {
+    text-align: center;
+  }
+}
+
+// ipad
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header,
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  .header__view {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-between--col {
+    text-align: center;
+  }
+
+  .footer-between--col:first-child,
+  .footer-between--col:last-child {
+    display: none;
+  }
+
+  .footer-bottom-col1:first-child {
+    display: none;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom-col1--social {
+    justify-content: center;
+  }
+}
+
+// ipad and mobile
+
+@media (max-width: 1023px) {
+  .header__nav {
+    display: none;
+  }
+
+  .footer-top__view {
+    display: none;
+  }
+
+  .footer-top__app {
+    width: 100%;
+  }
+
+  .footer-top__app-dowload {
+    justify-content: center;
+  }
+
+  .footer-top__app-dowload--link {
+    flex: none;
+  }
+
+  .footer-top__app-dowload--qr {
+    flex: none;
+  }
+}
